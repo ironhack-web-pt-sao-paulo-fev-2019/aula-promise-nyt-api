@@ -1,0 +1,19 @@
+{
+  "name": "aula-promise-nyt-api",
+  "version": "1.0.0",
+  "description": "search-nyt",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ironhack-web-pt-sao-paulo-fev-2019/aula-promise-nyt-api.git"
+  },
+  "author": "Wilkor Almeida",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ironhack-web-pt-sao-paulo-fev-2019/aula-promise-nyt-api/issues"
+  },
+  "homepage": "https://github.com/ironhack-web-pt-sao-paulo-fev-2019/aula-promise-nyt-api#readme"
+}
