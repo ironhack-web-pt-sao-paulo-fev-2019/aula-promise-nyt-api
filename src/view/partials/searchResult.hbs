@@ -1,1 +1,14 @@
-<h1>{{this.headline.main}}</h1>
+<h3>{{this.headline.main}}</h3>
+
+
+<div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img src="https://www.nytimes.com/{{this.multimedia.0.url}}" alt="Avatar" style="width:300px;height:300px;">
+    </div>
+    <div class="flip-card-back">
+      <p>{{this.snippet}}</p> 
+       <a href="{{this.web_url}}"><button class="btn btn-warning">Read More</button></a>
+    </div>
+  </div>
+</div>
