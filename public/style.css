@@ -22,8 +22,9 @@ html,body {
 h1 {
     font-family: 'Times New Roman', Times, serif;
     font-weight: 800;
-    font-size: 2rem;
+    font-size: 3rem;
     margin: 10px;
+    text-align: center;
 }
 
 h2 {
@@ -33,7 +34,10 @@ h2 {
     margin:10px;
 }
 
-p {font-family: Verdana, Geneva, Tahoma, sans-serif}
+p {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding:15px;
+}
 
 form {display: flex;}
 
@@ -61,19 +65,31 @@ input {
     justify-content: center;
     align-items: baseline;
     flex-wrap: wrap;
+    height: 100%;;
 }
 
 .post-box {
     display: flex;
-    justify-content: start;
+    justify-content: space-between;
     align-items: center;
     flex-direction: column;
     text-align: center;
     width: 30%;
     border-top: 1px solid #cccccc;
     padding-top: 20px;
+    height: 80%;
 }
 
 .post-box img {
     width: 90%;
+}
+
+a {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: white;
+    background: blue;
+    padding: 10px;
+    border-radius: 10px;
+    text-decoration: none;
+    margin-bottom: 10px;
 }
