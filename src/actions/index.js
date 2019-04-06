@@ -1,3 +1,10 @@
-const {app} = require('./config');
 
-app.listen(3000, () => console.log("My Spotify project running on port 3000 🎧 🥁 🎸 🔊"));
+index = (request,response) => {
+
+  response.render('index');
+},
+searchResults = (request,response) => {
+
+}
+
+module.exports = {index,searchResults}
