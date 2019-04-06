@@ -1,0 +1,25 @@
+.head{
+
+    display:flex;
+    justify-content: center;
+    height:50px;
+    background:#fafafa;
+}
+
+.logo-tny{
+  width:100%;
+  height:100px;
+  background-image:url('../images/new-york-times-logo-png-transparent.png');
+  background-repeat: no-repeat;
+  background-size:20%;
+
+}
+
+.form-tny{
+
+display: flex;
+justify-content: center;
+align-items: center;
+height: 200px;
+
+}

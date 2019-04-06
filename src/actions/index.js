@@ -1,10 +1,9 @@
+const home = require('../actions/home');
+const searchResults = require('../actions/searchResults');
 
-index = (request,response) => {
 
-  response.render('index');
-},
-searchResults = (request,response) => {
-
-}
-
-module.exports = {index,searchResults}
+module.exports = {
+  home,
+  searchResults
+ 
+} 

@@ -7,4 +7,4 @@ app.set('views', __dirname + '/view');
 app.use(express.static(__dirname + '/public'));
 hbs.registerPartials(__dirname + '/view/partials');
 
-module.exports = { hbs,app}
+module.exports = {hbs,app}
