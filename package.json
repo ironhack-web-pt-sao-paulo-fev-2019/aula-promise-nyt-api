@@ -1,0 +1,26 @@
+{
+  "name": "aula-promise-nyt-api",
+  "version": "1.0.0",
+  "description": "Promises e consumo de api",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ironhack-web-pt-sao-paulo-fev-2019/aula-promise-nyt-api.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ironhack-web-pt-sao-paulo-fev-2019/aula-promise-nyt-api/issues"
+  },
+  "homepage": "https://github.com/ironhack-web-pt-sao-paulo-fev-2019/aula-promise-nyt-api#readme",
+  "dependencies": {
+    "dotenv": "^7.0.0",
+    "express": "^4.16.4",
+    "hbs": "^4.0.3",
+    "node-fetch": "^2.3.0"
+  }
+}
