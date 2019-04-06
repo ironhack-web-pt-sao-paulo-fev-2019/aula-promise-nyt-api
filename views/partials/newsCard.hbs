@@ -1,0 +1,11 @@
+{{!-- Cada notícia encontrada deve conter: --}}
+{{!-- imagem; --}}
+{{!-- titulo; --}}
+{{!-- descrição; --}}
+{{!-- Link para a notícia no site do NYT. --}}
+
+<div>
+  <img src="https://www.nytimes.com/{{this.multimedia.0.url}}"/>
+  <h2>{{this.headline.main}}</h2>
+  <a href="{{this.web_url}}">Link para a notícia no site do NYT</a>
+</div>

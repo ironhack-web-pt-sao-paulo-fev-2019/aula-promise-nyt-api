@@ -6,31 +6,34 @@ const hbs = require('hbs');
 const app = express();
 const path = require('path');
 
+const fetch = require('node-fetch');
+
+
 app.set('view engine', 'hbs');
 app.set('views', `${__dirname}/views`);
 app.use(express.static(path.join(__dirname, 'public')));
 
 hbs.registerPartials(`${__dirname}/views/partials`);
 
-// Remember to insert your credentials here
-// const clientId = process.env.CLIENT_ID;
-// const clientSecret = process.env.CLIENT_SECRET;
+const key = process.env.KEY;
 
 app.get('/', (req, res) => {
   res.render('index');
 });
 
-app.get('/search-results', (req, res, next) => {
+app.get('/search-results', (request, response) => {
+  // https://api.nytimes.com/svc/search/v2/articlesearch.json?q=election&api-key=yourkey
 
-  // apiSpotify.getArtists(req.query.artist).then(data =>{
-
-  //  console.log(data)
-  //  res.render('artists', { data });
-  // }).catch(error =>{
-  //  console.log(error)
-  // })
- 
+  const search = request.query.q;
+  const URL = `https://api.nytimes.com/svc/search/v2/articlesearch.json?q=${search}&api-key=${key}`;
+  fetch(URL)
+    .then(data => data.json())
+    .then(json => json.response.docs)
+    .then((news) => {
+      // eslint-disable-next-line no-console
+      console.log(news[0]);
+      response.render('search-results', { news });
+    });
 });
-
 
 app.listen(3000);
