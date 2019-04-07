@@ -10,7 +10,6 @@ const {
 app.get('/',home);
 app.get('/search-results',searchResults);
 
-
 module.exports = app;
 
 
